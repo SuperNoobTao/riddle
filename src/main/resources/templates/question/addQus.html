@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../static/bootstrap/css/flaticon/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="../../static/bootstrap/css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../static/bootstrap/css/common/public.css">
+    <link rel="stylesheet" type="text/css" href="../../static/bootstrap/css/common/media856.css">
+    <link rel="stylesheet" type="text/css" href="../../static/bootstrap/css/common/content.css">
+
+
+</head>
+<body>
+<div class="line">
+    <h1>新增问题</h1>
+</div>
+
+
+<form action="/save" method="post" enctype="multipart/form-data" id="f">
+    <table class="tableA">
+
+        <tr>
+            <td>
+                标题:
+            </td>
+            <td>
+                <input id="question" name="title" placeholder="请在此输入题目">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                答案:
+            </td>
+            <td>
+                <input id="answer" name="title" placeholder="请在此输入答案">
+            </td>
+        </tr>
+        <tr>
+            <td>
+               选择次序:
+            </td>
+            <td>
+                <select id="project">
+                    <option value="all">请选择次序</option>
+                    <#list projects as p>
+                        <option value="${p.project_id}"></option>
+                    </#list>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <button class="btn ui-green" type="submit" >
+                    <a>
+                        提交
+                    </a>
+                </button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+<script src="../../static/bootstrap/js/jquery/jquery-1.7.2.min.js"></script>
+<script src="../../static/bootstrap/js/common/ui.js"></script>
+
+</body>
+</html>
+

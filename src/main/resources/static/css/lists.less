@@ -1,0 +1,223 @@
+/**
+ * Create by kirika
+ * style for lists
+ **/
+@import "init.less";
+body{
+	background-color: #f5f5f5;
+}
+.commonContent{
+	padding-top: 50px;
+}
+.image{
+ 	background-image: url("../img/testimg/grey.gif");
+ 	background-size: cover;
+ 	background-position: center;
+}
+.tabs{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	.tab{
+		float: left;
+		width: 50%;
+		line-height: 38px;
+		text-align: center;
+		font-size: 15px;
+		color: @gold;
+	}
+	.current{
+		border-bottom: 2px @gold solid;
+	}
+}
+#load{
+	text-align: center;
+	padding: 12px;
+	font-size: 13px;
+}
+.techList{
+	li{
+		position: relative;
+		width: 100%;
+		height: 160px;
+	}
+	a{
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.title{
+		position: absolute;
+		top: 50%;
+		left: 5%;
+		width: 90%;
+		text-align: center;
+		color: #fff;
+		font-size: 16px;
+		line-height: 1.5;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+	}
+	i{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		font-size: 18px;
+		color: #fff;
+	}
+}
+.radio{
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	font-size: 17px;
+	background-color: #fff;
+	border-radius: 7px;
+	border: 1px #ccc solid;
+	border-top: none;
+	margin: 12px;
+	margin-top: 0;
+	color: @blue;
+	i{
+		font-size: 31px;
+		vertical-align: sub;
+		margin-right: 10px;
+	}
+}
+.staffList{
+	padding: 0 12px;
+	li{
+		background-color: #fff;
+		border: 1px #ccc solid;
+		border-radius: 7px;
+		overflow: hidden;
+		margin-bottom: 13px;
+		color: @black;
+	}
+	.image{
+		width: 100%;
+		height: 190px;
+	}
+	.title{
+		position: relative;
+		padding: 8px;
+		padding-right: 40px;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	i{
+		position: absolute;
+		right: 10px;
+		top: 8px;
+		font-size: 18px;
+		color: @gold;
+	}
+}
+.cultureList{
+	li{
+		background-color: #fff;
+		border-bottom: 1px #eee solid;
+		margin-bottom: 12px;
+		color: @black;
+	}
+	.image{
+		width: 100%;
+		height: 190px;
+	}
+	.title{
+		position: relative;
+		padding: 8px;
+		padding-right: 40px;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	i{
+		position: absolute;
+		right: 10px;
+		top: 8px;
+		font-size: 18px;
+		color: @gold;
+	}
+}
+.radioList{
+	padding: 0 12px;
+	li{
+		position: relative;
+		height: 100px;
+		padding: 10px;
+		padding-left: 120px;
+		border-radius: 7px;
+		border: 1px #ddd solid;
+		background-color: #fff;
+		margin-bottom: 12px;
+		color: @black;
+	}
+	.image{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 90px;
+		height: 80px;
+		border-radius: 4px;
+	}
+	.title{
+		margin: 7px 0 10px;
+		font-size: 16px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.content{
+		font-size: 13px;
+		line-height: 17px;
+		color: #777;
+	}
+}
+.testList{
+	li{
+		position: relative;
+		height: 110px;
+		padding: 10px;
+		padding-left: 155px;
+		border-bottom: 1px #ddd solid;
+		background-color: #fff;
+		color: @black;
+	}
+	.image{
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 130px;
+		height: 100px;
+		border-radius: 4px;
+	}
+	.title{
+		margin: 23px 0 13px;
+		font-size: 16px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.content{
+		font-size: 13px;
+		line-height: 17px;
+	}
+	.time{
+		margin-right: 10px;
+	}
+	i{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		font-size: 18px;
+		color: @gold;
+	}
+}

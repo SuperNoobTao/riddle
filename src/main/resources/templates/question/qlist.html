@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/flaticon/flaticon.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/reset.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/public.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/media856.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/content.css}"/>
+</head>
+<body>
+<div class="line">
+    <h1>问题列表</h1>
+    <button class="btn ui-green" onclick="location.href='addQus.html'">
+        新增
+    </button>
+</div>
+<table class="tableA">
+
+
+    <tr>
+        <th>问题</th>
+        <th>答案</th>
+        <th>次序</th>
+        <th colspan="2">操作</th>
+
+    </tr>
+
+    <tr th:each="l : ${list}">
+        <td th:text="${l.question}">question</td>
+        <td th:text="${l.answer}">answer</td>
+        <td th:text="${l.sort}">sort</td>
+        <td colspan="2">
+            <a class="btn ui-green" href="culturegardendetail.action?id=${i.culturegarden_id}">修改</a>
+            <a class="btn ui-red"  onclick="delculture('${i.culturegarden_id}','${i.culturegarden_title}')">删除</a>
+        </td>
+    </tr>
+
+</table>
+
+
+<script th:src="@{js/jquery/jquery-1.7.2.min.js}"></script>
+<script th:src="@{js/common/ui.js}"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,102 @@
+<html lang="zh-CN" debug='true' style="height: 100%" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>我有两把枪</title>
+    <link href="" rel="icon"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/flaticon/flaticon.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/reset.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/public.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/media856.css}"/>
+    <script th:src="@{js/jquery/jquery-1.7.2.min.js}"></script>
+</head>
+<body style="height: 100%">
+<div class="topbar">
+    <div class="left menutoggler">
+        <i class="flaticon-list95"></i>
+    </div>
+    <!-- <img src="../resource/img/logo.png" class="logo" /> -->
+
+    <div class="right">
+        <div class="navblock" style="display:none" ><i class="flaticon-contacts1"></i></div>
+        <div class="navblock" style="display:none"><i class="flaticon-opened4"></i></div>
+        <div class="navblock" style="display:none">
+            <i class="flaticon-notify"></i>
+            <i class="flaticon-social11 noticenumbox"></i>
+            <span class="noticenum">10</span>
+        </div>
+        <div class="navblock usermenutoggler">Welcome </div>
+    </div>
+</div>
+
+<div class="leftside">
+    <div class="search">
+        <p class="logo">我有两把枪 后台管理系统</p>
+    </div>
+    <ul class="menu">
+
+        <li class="havesub">
+            <a>
+                <span class="icon"><i class="flaticon-house3"></i></span>
+                <span class="title">用户管理</span>
+                <span class="arrow">
+          <i class="flaticon-previous2"></i>
+          <i class="flaticon-expand38"></i>
+        </span>
+            </a>
+            <ul class="submenu">
+                <li data-href="/user"><a>查看详情</a></li>
+            </ul>
+        </li>
+
+
+        <li class="havesub">
+            <a>
+                <span class="icon"><i class="flaticon-tool14"></i></span>
+                <span class="title">问题管理</span>
+                <span class="arrow">
+          <i class="flaticon-previous2"></i>
+          <i class="flaticon-expand38"></i>
+        </span>
+            </a>
+            <ul class="submenu">
+                <li data-href="/question"><a>查看详情</a></li>
+            </ul>
+        </li>
+
+
+    </ul>
+</div>
+
+
+
+<div class="content" id="content">
+    <iframe src="/question" width="100%" height="100%" frameborder="0"></iframe>
+</div>
+<div class="masklayer">
+    <div class="alertbox">
+        <div class="title"><span>Select Department</span>
+            <i class="flaticon-cancel33"></i>
+        </div>
+        <div class="cont">
+        </div>
+        <div class="btngroup">
+            <a class="btn confirmbtn" style="background-color:#dd4340;color:#fff;" onclick="changepass()">确认</a>
+            <a class="btn cancelbtn">取消</a>
+            <a class="btn okbtn"></a>
+        </div>
+    </div>
+    <div class="loadingbox">
+        <!-- <img src="../resource/img/loading.gif"></div> -->
+    </div>
+</div>
+<div class="loadinglayer"></div>
+<!-- 弹出的窗口需要嵌入的代码 弹出方法见下一个注释 -->
+
+<div class="ui-scroll"></div>
+<script th:src="@{js/common/public.js}"></script>
+
+
+</body>
+</html>

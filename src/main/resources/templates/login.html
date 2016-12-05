@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Log In</title>
+
+  <link rel="stylesheet" type="text/css" th:href="@{css/common/reset.css}"/>
+  <link rel="stylesheet" type="text/css" th:href="@{css/login/login.css}"/>
+</head>
+
+<body>
+<section class="logo-wrapper">
+  <div class="brand-top"></div>
+  <div class="brand-middle">
+
+  </div>
+</section>
+<section class="login-wrapper">
+  <div class="login-panel">
+    <div class="login-title">
+      <p>我有两把枪</p>
+      <p>后台管理系统</p>
+      <p>V1.0</p>
+
+    </div>
+    <div class="login-img" style="display: none">
+
+      <img style="float:right;width: 100px;height: 100px;border-radius: 50px;margin-top:30px;" src=""/>
+
+    </div>
+
+    <form th:action="@{/login}" method="post">
+    <div class="login-submit">
+      <label class="sign-in">登入</label>
+      <input type="text" name="username" placeholder="管理员登入号" id="username"/>
+      <input type="password" name="password" placeholder="密码" id="password"/>
+      <button class="btn-red"  id="loginbtn">登入</button>
+
+      <div class="login-help">
+        <!-- <a href="#"><span>Forgot </span><span>Password?</span></a> -->
+      </div>
+    </div>
+</form>
+    <div class="login-copyright">
+      <p>Copyright 2016 我有两把枪</p>
+      <p>All rights reserved</p>
+      <div class="clear"></div>
+      <ul class="items">
+
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="brand-wrapper">
+  <div class="brand-bottom"></div>
+</section>
+<script type="text/javascript" th:src="@{js/jquery/jquery-1.11.1.min.js}"></script>
+<script type="text/javascript" th:src="@{js/login/login.js}"></script>
+<script>
+
+
+</script>
+
+</body>
+</html>

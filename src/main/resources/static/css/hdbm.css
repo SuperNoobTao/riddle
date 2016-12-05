@@ -1,0 +1,235 @@
+/**
+ * Create by 
+ * style for
+ 增加了close
+ 0911-报名和签到用同一个mrqd.css了，这个less不用了
+ **/
+body {
+  width: 100%;
+  height: auto;
+}
+body #header {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 200px;
+  background: url('../img/657160223593497680.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body #header .shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  opacity: .3;
+  background: url('../img/93981266502098618.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body #header .left {
+  position: absolute;
+  bottom: 12px;
+  left: 6.4%;
+  width: 19.2%;
+  height: 30px;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+body #header .left .days {
+  font-size: 30px;
+}
+body #header .left .tian {
+  font-size: 8px;
+}
+body #header .right {
+  font-size: 13px;
+  line-height: 16px;
+  position: absolute;
+  bottom: 12px;
+  left: 28.8%;
+  width: 63%;
+  height: 30px;
+  letter-spacing: .5px;
+  color: #fff;
+}
+body #header .right .bottom {
+  font-size: 11px;
+}
+body #container {
+  width: 100%;
+  margin-top: 24px;
+  padding: 0 24px 0 24px;
+}
+body #container .join {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+body #container .join .number {
+  font-size: 14px;
+  width: 100%;
+  color: #999;
+}
+body #container .join .head {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 32px;
+  margin-top: 15px;
+}
+body #container .join .head span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  background: url('../img/151669027211422859.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body #container .join .head .apostrophe {
+  position: absolute;
+  right: -8px;
+  bottom: 0;
+  width: 20px;
+  height: 32px;
+  color: #9f8c6c;
+}
+body #container .join .head .close {
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  display: none;
+  margin-top: 30px;
+  color: #cbcbcb;
+}
+body #container .join .close1 {
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  bottom: -14px;
+  display: none;
+  margin-top: 30px;
+  color: #cbcbcb;
+}
+body #container .rule {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 24px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+body #container .rule .rule1 {
+  font-size: 14px;
+  width: 100%;
+  height: auto;
+  margin-top: 24px;
+  color: #b9b0a1;
+}
+body #container .rule .rule2 {
+  font-size: 14px;
+  line-height: 15px;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+  letter-spacing: .1px;
+}
+body #container .rule .rule2 .br1 {
+  display: none;
+}
+body #container .rule .more {
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  margin-top: 10px;
+  color: #cbcbcb;
+}
+body #container .rule .close {
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  display: none;
+  margin-top: 30px;
+  color: #cbcbcb;
+}
+body #container .rule .apostrophe2 {
+  position: relative;
+  top: -10px;
+  width: 16px;
+  height: 16px;
+  margin-top: 10px;
+  color: #9f8c6c;
+}
+body #container .sign {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+body #container .sign .round {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  margin-top: 18px;
+  background: url('../img/574210462501271423.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body #container .sign .level {
+  font-size: 15px;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  text-align: center;
+  color: #c9ae9d;
+}
+body #container .sign .jifen {
+  font-size: 12px;
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+  text-align: center;
+  color: #c9ae9d;
+}
+body #container .sign .jifen .jifen2 {
+  margin-left: 10px;
+}
+body #container .sign .sign1 {
+  line-height: 50px;
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 26px;
+  margin-bottom: 10px;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #a28c67;
+}
+body #container .sign .sign1 .click {
+  font-size: 17px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+body #container .sign .sign1 .click1 {
+  font-size: 17px;
+  display: none;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+body #container .sign .success {
+  width: 100%;
+  height: 15px;
+  margin-top: 10px;
+  text-align: center;
+  color: #8c7f5f;
+  display: none;
+}

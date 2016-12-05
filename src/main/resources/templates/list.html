@@ -1,0 +1,65 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,answer-scalable=no" />
+	<title>我有两把枪</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/list.css" />
+	<link rel="stylesheet" type="text/css" href="css/content.css" />
+
+</head>
+<body>
+
+
+
+	<div id="header" class="header2">
+		<img  src="img/tab2.png" />
+	</div>
+
+
+
+<div id="container">
+
+	<div class="rule">
+		<span class="rule2">
+			<div class="text" style=" text-align:center;">中奖名单</div>
+			</span>
+	</div>
+
+
+		<div class="rule">
+
+			<table class="tableA">
+				<tr style="background: black;color: white;">
+					<th>用户</th>
+					<th>答对个数</th>
+					<th>奖励</th>
+				</tr>
+
+				<tr th:each="l : ${list}">
+					<td th:text="${l.username}">username</td>
+					<td th:text="${l.num}">num</td>
+					<td th:switch="${l.num}">
+						<p th:case="1">榜上有名</p>
+						<p th:case="2">连中二元</p>
+						<p th:case="3">连中三元</p>
+					</td>
+				</tr>
+			</table>
+
+
+ 		</div>
+
+
+
+
+</div>
+
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/mrqd.js"></script>
+
+</body>
+</html>

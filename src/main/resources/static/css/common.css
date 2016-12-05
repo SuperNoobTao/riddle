@@ -1,0 +1,65 @@
+/**
+ * Create by kirika
+ * style for zhanxun
+ **/
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  padding-bottom: 58px;
+  font-size: 14px;
+}
+.commonContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.commonFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 58px;
+  background-color: #fff;
+}
+.commonFooter ul {
+  width: 100%;
+  height: 100%;
+  padding: 0 12px;
+}
+.commonFooter .nav {
+  position: relative;
+  display: block;
+  float: left;
+  width: 33.3%;
+  height: 100%;
+  text-align: center;
+  padding-top: 7px;
+  color: #333333;
+}
+/*.commonFooter .nav:after {*/
+  /*content: " ";*/
+  /*display: block;*/
+  /*position: absolute;*/
+  /*right: 0;*/
+  /*top: 13px;*/
+  /*width: 1px;*/
+  /*height: 30px;*/
+  /*background-color: #999;*/
+/*}*/
+.commonFooter .nav:last-of-type:after {
+  display: none;
+}
+.commonFooter .nav i {
+  font-size: 25px;
+  color: #9a7f53;
+}
+.commonFooter .navTag {
+  margin-top: 6px;
+  font-size: 11px;
+}

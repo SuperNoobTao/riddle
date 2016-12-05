@@ -1,0 +1,66 @@
+/**
+ * Create by kirika
+ * style for zhanxun
+ **/
+@import "init.less";
+
+html,body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	padding-bottom: 58px;
+	font-size: 14px;
+}
+.commonContent{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.commonFooter{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 58px;
+	background-color: #fff;
+	ul{
+		width: 100%;
+		height: 100%;
+		padding: 0 12px;
+	}
+	.nav{
+		position: relative;
+		display: block;
+		float: left;
+		width: 33.3%;
+		height: 100%;
+		text-align: center;
+		padding-top: 7px;
+		color: @black;
+		//&:after{
+		//	content: " ";
+		//	display: block;
+		//	position: absolute;
+		//	right: 0;
+		//	top: 13px;
+		//	width: 1px;
+		//	height: 30px;
+		//	background-color: #999;
+		//}
+		&:last-of-type:after{
+			display: none;
+		}
+		i{
+			font-size: 25px;
+			color: @gold;
+		}
+	}
+	.navTag{
+		margin-top: 6px;
+		font-size: 11px;
+	}
+}

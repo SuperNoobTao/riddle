@@ -1,0 +1,216 @@
+/**
+ * Create by kirika
+ * style for lists
+ **/
+body {
+  background-color: #f5f5f5;
+}
+.commonContent {
+  padding-top: 50px;
+}
+.image {
+  background-image: url("../img/testimg/grey.gif");
+  background-size: cover;
+  background-position: center;
+}
+.tabs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+}
+.tabs .tab {
+  float: left;
+  width: 50%;
+  line-height: 38px;
+  text-align: center;
+  font-size: 15px;
+  color: #9a7f53;
+}
+.tabs .current {
+  border-bottom: 2px #9a7f53 solid;
+}
+#load {
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+}
+.techList li {
+  position: relative;
+  width: 100%;
+  height: 160px;
+}
+.techList a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.techList .title {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.techList i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+.radio {
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  font-size: 17px;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px #ccc solid;
+  border-top: none;
+  margin: 12px;
+  margin-top: 0;
+  color: #01234f;
+}
+.radio i {
+  font-size: 31px;
+  vertical-align: sub;
+  margin-right: 10px;
+}
+.staffList {
+  padding: 0 12px;
+}
+.staffList li {
+  background-color: #fff;
+  border: 1px #ccc solid;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 13px;
+  color: #333333;
+}
+.staffList .image {
+  width: 100%;
+  height: 190px;
+}
+.staffList .title {
+  position: relative;
+  padding: 8px;
+  padding-right: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.staffList i {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-size: 18px;
+  color: #9a7f53;
+}
+.cultureList li {
+  background-color: #fff;
+  border-bottom: 1px #eee solid;
+  margin-bottom: 12px;
+  color: #333333;
+}
+.cultureList .image {
+  width: 100%;
+  height: 190px;
+}
+.cultureList .title {
+  position: relative;
+  padding: 8px;
+  padding-right: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.cultureList i {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-size: 18px;
+  color: #9a7f53;
+}
+.radioList {
+  padding: 0 12px;
+}
+.radioList li {
+  position: relative;
+  height: 100px;
+  padding: 10px;
+  padding-left: 120px;
+  border-radius: 7px;
+  border: 1px #ddd solid;
+  background-color: #fff;
+  margin-bottom: 12px;
+  color: #333333;
+}
+.radioList .image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 90px;
+  height: 80px;
+  border-radius: 4px;
+}
+.radioList .title {
+  margin: 7px 0 10px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.radioList .content {
+  font-size: 13px;
+  line-height: 17px;
+  color: #777;
+}
+.testList li {
+  position: relative;
+  height: 110px;
+  padding: 10px;
+  padding-left: 155px;
+  border-bottom: 1px #ddd solid;
+  background-color: #fff;
+  color: #333333;
+}
+.testList .image {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 130px;
+  height: 100px;
+  border-radius: 4px;
+}
+.testList .title {
+  margin: 23px 0 13px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.testList .content {
+  font-size: 13px;
+  line-height: 17px;
+}
+.testList .time {
+  margin-right: 10px;
+}
+.testList i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  color: #9a7f53;
+}

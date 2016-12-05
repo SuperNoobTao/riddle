@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/flaticon/flaticon.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/reset.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/public.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/media856.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{css/common/content.css}"/>
+</head>
+<body>
+<div class="line">
+    <h1>答题情况</h1>
+
+
+</div>
+<table class="tableA">
+    <thead>
+    <tr>
+        <button class="btn ui-green" onclick="location.href='/0'">答对0题</button>
+        <button class="btn ui-green" onclick="location.href='/1'">答对1题</button>
+        <button class="btn ui-green" onclick="location.href='/2'">答对2题</button>
+        <button class="btn ui-green" onclick="location.href='/3'">答对3题</button>
+    </tr>
+    </thead>
+    <tr>
+        <th>用户</th>
+        <th>答对题目数量</th>
+    </tr>
+    <tr th:each="l : ${list}">
+        <td th:text="${l.username}">username</td>
+        <td th:text="${l.num}">num</td>
+    </tr>
+
+</table>
+<script th:src="@{js/jquery/jquery-1.7.2.min.js}"></script>
+<script th:src="@{js/common/ui.js}"></script>
+
+</body>
+</html>
+
