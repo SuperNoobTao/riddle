@@ -13,11 +13,17 @@
 </head>
 
 <body
-        style="background-image:url(img/null.jpg);
-        background-position:center;
-        background-repeat:no-repeat;
+        style="
+        background: url('img/null.jpg') no-repeat center center fixed;
+        -webkit-background-size: 100% 100% ;
+        -moz-background-size: 100% 100% ;
+        -o-background-size: 100% 100% ;
+        -ms-background-size: 100% 100% ;
         background-size: 100% 100% ;
-        background-attachment: fixed;">
+
+">
+
+
 <td th:switch="${q}">
     <button th:case="1" onclick="window.location.href='/question1'" style="width: 250px;height: 40px; position:
         fixed;top:50%;left:35%;margin:-20px 0 0 -75px; line-height: 40px;background: rgba(0,0,0,0.8);border-radius:5px;
