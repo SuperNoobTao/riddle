@@ -72,6 +72,7 @@
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.13" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aspects:4.2.3.RELEASE" />
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.25" />
         </element>
       </element>
       <element id="directory" name="META-INF">
