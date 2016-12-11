@@ -15,18 +15,25 @@
             font-size: 13px;
             line-height: 1.5;
         }
-        .a{width: 100%;height: 60%}
+
+        .a {
+            width: 100%;
+            height: 60%
+        }
+
         .swiper-container {
             width: 100%;
             height: 400px;
             color: #fff;
             text-align: center;
         }
+
         .swiper-container img {
             display: block;
             width: 100%;
             height: 100%;
         }
+
         .swiper-slide .title {
             font-style: italic;
             font-size: 42px;
@@ -34,16 +41,19 @@
             margin-bottom: 0;
             line-height: 45px;
         }
+
         .swiper-slide p {
             font-style: italic;
             font-size: 25px;
         }
+
         .pagination {
             position: absolute;
             z-index: 20;
             left: 10px;
             bottom: 10px;
         }
+
         .swiper-pagination-switch {
             display: inline-block;
             width: 8px;
@@ -55,12 +65,15 @@
             border: 1px solid #fff;
             cursor: pointer;
         }
+
         .swiper-active-switch {
             background: #fff;
         }
+
         .swiper-dynamic-links {
             text-align: center;
         }
+
         .swiper-dynamic-links a {
             display: inline-block;
             padding: 5px;
@@ -95,7 +108,7 @@
 
 <div id="container">
 
-    <form th:action="@{/save1}" method="post">
+    <form th:action="@{/save1}" method="post" onsubmit="return sumbit_sure()">
 
         <div class="rule">
             <p class="rule1">填写微信号</p>
@@ -107,14 +120,19 @@
         <div class="rule">
             <p class="rule1">填写答案</p>
             <span class="rule2">
-				<input placeholder="answer" id="answer" name="answer" type="text"/>
+	<label><input name="answer" type="radio" value="品牌A"/>品牌A </label>
+    <label><input name="answer" type="radio" value="品牌A"/>品牌B </label>
+    <label><input name="answer" type="radio" value="品牌A"/>品牌C </label>
+    <label><input name="answer" type="radio" value="品牌A"/>品牌D </label>
+                <br/>
+    <label><input name="answer" type="radio" value="品牌A"/>品牌E </label>
+    <label><input name="answer" type="radio" value="品牌A"/>品牌F </label>
+    <label><input name="answer" type="radio" value="品牌A"/>品牌G </label>
+    <label><input name="answer" type="radio" value="品牌A"/>品牌H </label>
 			</span>
         </div>
-
         <!--<div class="sign">-->
-
         <button id="btn_submit" class="my-click">点击提交</button>
-
         <!--</div>-->
 
     </form>
@@ -125,51 +143,64 @@
 <script th:src="@{dist/idangerous.swiper.min.js}"></script>
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" th:src="@{js/mrqd.js}"></script>
-<script>
-    var mySwiper = new Swiper('.swiper-container',{
+
+<script  th:inline="javascript">
+    function sumbit_sure(){
+
+        var gnl=confirm("确定要提交?");
+        if (gnl==true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    </script>
+
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
         pagination: '.pagination',
         paginationClickable: true
     })
 
     /* Dynamic Swiper Links*/
-    function randomColor () {
+    function randomColor() {
         var colors = ('blue red green orange pink').split(' ');
-        return colors[ Math.floor( Math.random()*colors.length ) ]
+        return colors[Math.floor(Math.random() * colors.length)]
     }
     var count = 4;
-    $('.sdl-append').click(function(e) {
+    $('.sdl-append').click(function (e) {
         e.preventDefault();
-        mySwiper.appendSlide('<div class="title">Slide '+(++count)+'</div>', 'swiper-slide '+randomColor()+'-slide')
+        mySwiper.appendSlide('<div class="title">Slide ' + (++count) + '</div>', 'swiper-slide ' + randomColor() + '-slide')
     });
-    $('.sdl-prepend').click(function(e) {
+    $('.sdl-prepend').click(function (e) {
         e.preventDefault();
-        mySwiper.prependSlide('<div class="title">Slide  '+(++count)+'</div>', 'swiper-slide '+randomColor()+'-slide')
+        mySwiper.prependSlide('<div class="title">Slide  ' + (++count) + '</div>', 'swiper-slide ' + randomColor() + '-slide')
     });
-    $('.sdl-swap').click(function(e) {
+    $('.sdl-swap').click(function (e) {
         e.preventDefault();
         mySwiper
                 .getFirstSlide()
                 .insertAfter(1)
     });
-    $('.sdl-insert').click(function(e) {
+    $('.sdl-insert').click(function (e) {
         e.preventDefault();
         mySwiper
-                .createSlide('<div class="title">Slide  '+(++count)+'</div>', 'swiper-slide '+randomColor()+'-slide')
+                .createSlide('<div class="title">Slide  ' + (++count) + '</div>', 'swiper-slide ' + randomColor() + '-slide')
                 .insertAfter(0)
     });
-    $('.sdl-remove1').click(function(e) {
+    $('.sdl-remove1').click(function (e) {
         e.preventDefault();
         mySwiper.removeSlide(0)
     });
-    $('.sdl-removel').click(function(e) {
+    $('.sdl-removel').click(function (e) {
         e.preventDefault();
         mySwiper.removeLastSlide()
     });
-    $('.sdl-remove2').click(function(e) {
+    $('.sdl-remove2').click(function (e) {
         e.preventDefault();
         mySwiper.removeSlide(1)
     });
-    onSlideChangeStart= function() {
+    onSlideChangeStart = function () {
         var H = $(".swiper-container").height();
         $(".swiper-slide").css('height', H + 'px');
         $(".swiper-wrapper").css('height', H + 'px');
